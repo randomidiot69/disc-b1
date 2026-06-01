@@ -3,7 +3,8 @@ import random
 from discord.ext import commands
 import os
 import time
-
+print("ENV KEYS:", list(os.environ.keys()))
+print("TOKEN VALUE:", repr(os.getenv("TOKEN")))
 TOKEN = os.getenv("TOKEN")
 
 intents = discord.Intents.default()
